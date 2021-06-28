@@ -29,8 +29,8 @@ console.log(newGrid);
 for (let i=0; i<12; i++){
     let childNode = allFlips[i].childNodes[1];
     childNode.remove();
-    console.log(newGrid[i]-1);
-    console.log(allCards[newGrid[i]-1]);
+    // console.log(newGrid[i]-1);
+    // console.log(allCards[newGrid[i]-1]);
     allFlips[i].appendChild(allCards[newGrid[i]-1]);
 }
 
@@ -91,7 +91,7 @@ function checkCards(firstCard, secondCard) {
             secondCard.classList.remove('active');
             alreadyFlippedCard = false;
             numberOfFlippedCards = 0;
-        }, 1500);
+        }, 900);
 
     }
 
